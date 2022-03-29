@@ -3,9 +3,9 @@ layout: default
 ---
 # Abstract
 
-Previous works on expressive speech synthesis mainly focus on current sentence. The context in adjacent sentences is neglected, resulting in inﬂexible speaking style for the same text, which lacks speech variations. In this paper, we propose a hierarchical framework to model speaking style from context. A hierarchical context encoder is proposed to explore a wider range of contextual information considering structural relationship in context, including interphrase and inter-sentence relations. Moreover, to encourage this encoder to learn style representation better, we introduce a novel training strategy with knowledge distillation, which provides the target for encoder training. Both objective and subjective evaluations on a Mandarin lecture dataset demonstrate that the proposed method can signiﬁcantly improve the naturalness and expressiveness of the synthesized speech.
+  This paper presents an end-to-end high-quality singing voice synthesis (SVS) system that uses bidirectional encoder representation from Transformers (BERT) derived semantic embeddings to improve the expressiveness of the synthesized singing voice.Based on the main architecture of recently proposed VISinger, we put forward several specific designs for expressive singing voice synthesis.First, different from the previous SVS models, we use text representation of lyrics extracted from pre-trained BERT as additional input to the model. The representation contains information about semantics of the lyrics, which could help SVS system produce more expressive and natural voice. Second, we further introduce an energy predictor to stabilize the synthesized voice and model the wider range of energy variations that also contribute to the expressiveness of singing voice. Last but not the least, to attenuate the off-key issues, the pitch predictor is re-designed to predict the real to note pitch ratio. Both objective and subjective experimental results prove that the proposed SVS system can produce singing voice with higher-quality outperforming VISinger.
 
-# Subjective Evaluation 
+<!-- # Subjective Evaluation 
 To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized speech, some samples are provided for comparison. **GT** means ground truth. **FastSpeech 2** means  original FastSpeech 2 with several changes consistent to the proposed model, and **XLNET-FastSpeech 2** means FastSpeech 2 with a plain context encoder without the use of inter-sentence relations, which are described in detail in the paper. In addition, a well-trained HIFI-GAN is used as the vocoder to generate waveform.
 
 | Target Chinese Text | GT | FastSpeech 2 | XLNET-FastSpeech2 | Proposed |
@@ -53,5 +53,5 @@ To explore the impact of contextual information on the expressiveness of synthes
 | :---- | :---- | :---- | :---: |
 | original context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="25%"> |
 | irrelevant context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/random.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/random.png" width="25%"> |
-| no context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/self.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/self.png" width="25%"> |
+| no context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/self.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/self.png" width="25%"> | -->
 

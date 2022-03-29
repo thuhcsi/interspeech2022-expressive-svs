@@ -1,6 +1,6 @@
 remote_theme: thuhcsi/slate
-title: TOWARDS EXPRESSIVE SPEAKING STYLE MODELLING WITH HIERARCHICAL CONTEXT INFORMATION FOR MANDARIN SPEECH SYNTHESIS
-description: submitted to ICASSP 2022.
+title: Towards Improving the Expressiveness of Singing Voice Synthesis with BERT Derived Semantic Information
+description: submitted to INTERSPEECH 2022.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
