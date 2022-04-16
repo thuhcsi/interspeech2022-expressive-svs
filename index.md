@@ -4,6 +4,16 @@ layout: default
 # Abstract
 
   This paper presents an end-to-end high-quality singing voice synthesis (SVS) system that uses bidirectional encoder representation from Transformers (BERT) derived semantic embeddings to improve the expressiveness of the synthesized singing voice.Based on the main architecture of recently proposed VISinger, we put forward several specific designs for expressive singing voice synthesis.First, different from the previous SVS models, we use text representation of lyrics extracted from pre-trained BERT as additional input to the model. The representation contains information about semantics of the lyrics, which could help SVS system produce more expressive and natural voice. Second, we further introduce an energy predictor to stabilize the synthesized voice and model the wider range of energy variations that also contribute to the expressiveness of singing voice. Last but not the least, to attenuate the off-key issues, the pitch predictor is re-designed to predict the real to note pitch ratio. Both objective and subjective experimental results prove that the proposed SVS system can produce singing voice with higher-quality outperforming VISinger.
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./imgs/model.jpg"  width="100%">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"> Fig.1: The structure of the proposed model. </div>
+</center>
 
 # Subjective Evaluation 
 To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper. 
