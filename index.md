@@ -27,7 +27,7 @@ To demonstrate that our proposed model can significantly improve the naturalness
 
 
 # Ablation Study 
-### Investigation on knowledge distillation training strategy
+We further conduct an ablation study to validate different contributions in our proposed method.  We remove energy predictor, semantic extraction module respectively and design a semantic extraction module with different structure named reversed semantic extraction module, abbreviated as reversed SEM, to replace the semantic extraction module. The audio samples are present below.
 
 | Target Chinese Text |  GT | Proposed | without semantic | without energy | with reversed SEM |
 | :---- | :---- | :---- | :---- |:---- |:---- |:---- |
