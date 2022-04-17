@@ -66,15 +66,15 @@ We further conduct an ablation study to validate different contributions in our 
 
 
 * * *
-
+-->
 
 # Case Study
 To explore the impact of contextual information on the expressiveness of synthesized speech, a case study is conducted to synthesize the same utterance with different context: i) using ground-truth context (original context); ii) randomly selecting 4 sentences and itself as context (irrelevant context); iii) using current sentence only (no context).
 
 
-| Context | Target Chinese Text | Audio | Mel-Spectrogram |
-| :---- | :---- | :---- | :---: |
-| original context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="25%"> |
-| irrelevant context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/random.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/random.png" width="25%"> |
-| no context | 因为大家一定要注意。 | <audio controls><source src="./wavs/casestudy/self.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/self.png" width="25%"> | -->
+| Target Chinese Text | Audio | Visualizations of spectrograms |
+| :---- | :---- | :---: |
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="25%"> |
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/visinger.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/visinger.png" width="25%"> |
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="25%"> | 
 
