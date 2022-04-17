@@ -69,7 +69,7 @@ We further conduct an ablation study to validate different contributions in our 
 -->
 
 # Case Study
-We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling: i) Visinger iii) Ground truth
+We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling: i) **Proposed** ii) **Visinger** iii) **Ground truth**
 
 
 | Target Chinese Text | Audio | Visualizations of spectrograms |
