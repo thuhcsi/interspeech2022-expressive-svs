@@ -19,7 +19,7 @@ layout: default
 To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper. 
 
 | Target Chinese Text | GT | VISinger | Proposed |
-| :---- | :---- | :---- | :---- | :---- |
+| :----:| :----:| :----:| :----:| :----:|
 | 昂首到达每一个地方这世界的太阳 | <audio controls><source src="./wavs/gt/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/visinger/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
 | 右手左手慢动作重播 | <audio controls><source src="./wavs/gt/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/visinger/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
 | 这首歌给你快乐你有没有爱上我 | <audio controls><source src="./wavs/gt/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/visinger/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
@@ -40,7 +40,7 @@ To demonstrate that our proposed model can significantly improve the naturalness
 We further conduct an ablation study to validate different contributions in our proposed method.  We remove energy predictor, semantic extraction module respectively and design a semantic extraction module with different structure named reversed semantic extraction module, abbreviated as reversed SEM, to replace the semantic extraction module. The audio samples are present below.
 
 | Target Chinese Text |  GT | Proposed | without semantic | without energy | with reversed SEM |
-| :---- | :---- | :---- | :---- |:---- |:---- |:---- |
+| :----:| :----:| :----:| :----:|:----:|:----:|:----:|
 | 昂首到达每一个地方这世界的太阳 | <audio controls><source src="./wavs/gt/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab5/0.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab2/0.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./wavs/lab4/0.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 | 右手左手慢动作重播 | <audio controls><source src="./wavs/gt/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab5/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab2/1.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./wavs/lab4/1.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 | 这首歌给你快乐你有没有爱上我 | <audio controls><source src="./wavs/gt/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab5/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/lab2/2.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./wavs/lab4/2.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
@@ -57,7 +57,7 @@ We further conduct an ablation study to validate different contributions in our 
 ### Investigation on hierarchical context encoder
 
 | Target Chinese Text | Proposed | without hierarchical context encoder |
-| :---- | :---- | :---- |
+| :----:| :----:| :----:|
 | 啊，这个成绩是什么呢？客观题。 | <audio controls><source src="./wavs/cmos2/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/cmos2/-1.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
 | 它其实属于第几款呢？ | <audio controls><source src="./wavs/cmos2/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/cmos2/-2.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
 | 叫余平故意泄露国家秘密罪。 | <audio controls><source src="./wavs/cmos2/3.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/cmos2/-3.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
@@ -69,11 +69,11 @@ We further conduct an ablation study to validate different contributions in our 
 -->
 
 # Case Study
-To explore the impact of contextual information on the expressiveness of synthesized speech, a case study is conducted to synthesize the same utterance with different context: i) using ground-truth context (original context); ii) randomly selecting 4 sentences and itself as context (irrelevant context); iii) using current sentence only (no context).
+We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling: i) Visinger iii) Ground truth
 
 
 | Target Chinese Text | Audio | Visualizations of spectrograms |
-| :---- | :---- | :---: |
+| :----:| :----:| :---: |
 | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="75%"> |
 | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/visinger.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/visinger.png" width="75%"> |
 | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="75%"> | 
