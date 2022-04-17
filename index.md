@@ -74,7 +74,7 @@ To explore the impact of contextual information on the expressiveness of synthes
 
 | Target Chinese Text | Audio | Visualizations of spectrograms |
 | :---- | :---- | :---: |
-| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="25%"> |
-| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/visinger.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/visinger.png" width="25%"> |
-| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="25%"> | 
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="75%"> |
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/visinger.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/visinger.png" width="75%"> |
+| 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="75%"> | 
 
