@@ -69,8 +69,7 @@ We further conduct an ablation study to validate different contributions in our 
 -->
 
 # Case Study
-We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling: i) **Proposed** ii) **Visinger** iii) **Ground truth**
-
+We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling. The first to third rows correspond to **Proposed**, **VISinger** and **Ground Truth** respectively. The blue line in the graph represents the pitch and the yellow line represents the energy. We can observe that the proposed method can model the dramatic energy and pitch changes in the red boxs while VISinger can not model it. In addition, the synthesized singing voice of proposed method also has better stability compared to the VISinger. It demonstrated that the proposed energy predictor improves the quality of synthesized singing voice.
 
 | Target Chinese Text | Audio | Visualizations of spectrograms |
 | :----:| :----:| :---: |
